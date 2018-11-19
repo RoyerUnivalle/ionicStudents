@@ -10,12 +10,15 @@
 </ion-header>
 
 <ion-content>
+
+    {{mensaje}}
+
   <ion-list>
-    <ion-item *ngFor="let item of items">
-      <ion-icon [name]="item.icon" slot="start"></ion-icon>
-      {{item.title}}
+    <ion-item *ngFor="let icon of iconsServer">
+      <ion-icon [name]="icon.icon" slot="start"></ion-icon>
+      {{icon.name}}
       <div class="item-note" slot="end">
-        {{item.note}}
+        {{icon.name}}
       </div>
     </ion-item>
   </ion-list>
@@ -24,4 +27,13 @@
       You navigated here from <b>{{selectedItem.title }}</b>
     </div>
   -->
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label fixed>Mensaje</ion-label>
+      <ion-input type="text" [(ngModel)]="mensaje"></ion-input>
+    </ion-item>
+  
+  </ion-list>
 </ion-content>

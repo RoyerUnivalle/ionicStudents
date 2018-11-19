@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import {HomePageModule } from './home/home.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import {HomePageModule } from './home/home.module';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    HomePageModule
+    HomePageModule,
+    HttpClientModule
   ],
   providers: [
     StatusBar,
