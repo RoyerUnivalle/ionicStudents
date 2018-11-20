@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common'
 
 @Component({
   selector: 'app-detalle',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetallePage implements OnInit {
 
-  constructor() { }
+  constructor(private __location: Location) { }
 
   ngOnInit() {
+  }
+
+  public goBack(){
+    this.__location.back();
   }
 
 }

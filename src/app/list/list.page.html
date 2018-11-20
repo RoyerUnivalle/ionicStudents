@@ -11,10 +11,9 @@
 
 <ion-content>
 
-    {{mensaje}}
 
   <ion-list>
-    <ion-item *ngFor="let icon of iconsServer">
+    <ion-item *ngFor="let icon of iconsServer" routerLink="/detalle">
       <ion-icon [name]="icon.icon" slot="start"></ion-icon>
       {{icon.name}}
       <div class="item-note" slot="end">
@@ -28,12 +27,11 @@
     </div>
   -->
 
+  {{mensaje}}
   <ion-list>
-
     <ion-item>
       <ion-label fixed>Mensaje</ion-label>
       <ion-input type="text" [(ngModel)]="mensaje"></ion-input>
     </ion-item>
-  
   </ion-list>
 </ion-content>
