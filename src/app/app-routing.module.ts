@@ -17,7 +17,10 @@ const routes: Routes = [
   },
   { path: 'login', loadChildren: './views/login/login.module#LoginPageModule' },
   { path: 'perfil', loadChildren: './views/perfil/perfil.module#PerfilPageModule' },
-  { path: 'detalle', loadChildren: './views/detalle/detalle.module#DetallePageModule' }
+  { path: 'detalle', loadChildren: './views/detalle/detalle.module#DetallePageModule' },
+  { path: 'tarifarios', loadChildren: './views/tarifarios/tarifarios.module#TarifariosPageModule' },
+  { path: 'tarifarios/:producto', loadChildren: './views/tarifarios/tarifarios.module#TarifariosPageModule' },
+  { path: 'producto', loadChildren: './views/producto/producto.module#ProductoPageModule' }
 ];
 
 @NgModule({

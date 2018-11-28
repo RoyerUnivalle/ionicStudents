@@ -25,6 +25,12 @@ export class AppComponent {
       url: '/login',
       icon: 'list'
     }
+    ,
+    {
+      title: 'Productos',
+      url: '/producto',
+      icon: 'cube'
+    }
   ];
 
   constructor(
